@@ -1,0 +1,33 @@
+{
+  "name": "lks_fix",
+  "version": "2.4",
+  "manifest_version": 3,
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://e-learning.bmstu.ru/kaluga/"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://e-learning.bmstu.ru/kaluga/"],
+      "js": ["app.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
+
+
+
